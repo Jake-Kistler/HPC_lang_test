@@ -41,7 +41,7 @@ bench: $(TARGET)
 # -----------------------------
 plot:
 	@echo "Generating R plots..."
-	Rscript ../../results/plot_cpu.R
+	cd ../../results && Rscript plot_cpu.R
 	@echo "Plot created."
 
 # -----------------------------

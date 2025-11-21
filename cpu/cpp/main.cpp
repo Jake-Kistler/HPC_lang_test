@@ -18,8 +18,9 @@ int main(int argc, char** argv)
     };
 
     // ---- CSV outputs ----
-    std::ofstream csv_time("results_cpu_baseline.csv");
-    std::ofstream csv_verify("results_cpu_verify.csv");
+    std::ofstream csv_time("../../results/results_cpu_baseline.csv");
+    std::ofstream csv_verify("../../results/results_cpu_verify.csv");
+
 
     csv_time   << "N,time_ms\n";
     csv_verify << "N,correct\n";
@@ -69,8 +70,9 @@ int main(int argc, char** argv)
 
     std::cout << "\nAll tests complete.\n";
     std::cout << "Results written to:\n";
-    std::cout << "  results_cpu_baseline.csv\n";
-    std::cout << "  results_cpu_verify.csv\n";
+    std::cout << "  ../../results/results_cpu_baseline.csv\n";
+    std::cout << "  ../../results/results_cpu_verify.csv\n";
+
 
     return 0;
 }
